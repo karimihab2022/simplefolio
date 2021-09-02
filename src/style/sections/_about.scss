@@ -17,21 +17,23 @@
     -webkit-clip-path: none;
     clip-path: none;
   }
-
+    
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
+     
     }
 
     &__image {
+      max-width: 300px;
       display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
+      margin: auto;
+      
+      
+      
+      
 
-      @include respond(tab-land) {
-        height: 100%;
-      }
+     
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
@@ -48,7 +50,9 @@
       }
 
       &-text {
+        font-size: 20px;
         text-align: left;
+        font-weight: bold;
 
         @include respond(tab-port) {
           text-align: left;
@@ -64,6 +68,7 @@
           padding: 0 0.3rem;
           margin: 0.3rem 0;
           line-height: 1.6;
+          
 
           @include respond(phone) {
             display: inline;
